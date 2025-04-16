@@ -24,6 +24,11 @@ nav {
       display: flex;
       list-style: none;
       justify-content: space-between;
+      li a {
+        text-decoration: none;
+        font-family: $font-sans-serif;
+        font-size: $size-4;
+      }
     }
   }
 }
