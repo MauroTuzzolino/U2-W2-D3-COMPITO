@@ -1,0 +1,9 @@
+@import "./colori";
+
+@each $key, $color in $coloriBtn {
+  .btnColor-#{$key} {
+    background-color: $color;
+    color: $colore-testo;
+    font-size: $size-3;
+  }
+}

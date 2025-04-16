@@ -1,0 +1,71 @@
+@import "./partial/reset";
+@import "./partial/colori";
+@import "./partial/fonts";
+@import "./partial/spaziature";
+@import "./partial/bottoni";
+@import "./partial/mixinsGenerici";
+@import "./partial/animazioni";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 30px 70px 0px 70px;
+  #sassLogo {
+    height: 70px;
+  }
+
+  #ulContainer {
+    width: 25%;
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+    }
+  }
+}
+
+#hero {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $colore-sfondo;
+  color: $colore-testo;
+  padding: 30px;
+  #textHeroArea {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      @include title-big($size-6, 700);
+    }
+  }
+
+  #sassImgArea {
+    width: 25%;
+    img {
+      height: 300px;
+    }
+  }
+}
+
+#griglia {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.imgContainer {
+  display: flex;
+  width: 20%;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}

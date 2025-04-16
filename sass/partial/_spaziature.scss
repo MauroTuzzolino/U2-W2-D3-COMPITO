@@ -1,0 +1,17 @@
+$spacing: (
+  sm: 0.25rem,
+  md: 0.5rem,
+  lg: 1rem,
+  xl: 1.5rem,
+  xxl: 3rem,
+);
+
+@mixin generate-spacing-classes($property, $directions) {
+  @each $direction in $directions {
+    @each $size, $value in $spacing {
+      .#{$property}-#{$direction}-#{$size} {
+        #{$property}-#{$direction}: $value;
+      }
+    }
+  }
+}
