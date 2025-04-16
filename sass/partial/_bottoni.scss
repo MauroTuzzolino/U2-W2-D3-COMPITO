@@ -6,4 +6,7 @@
     color: $colore-testo;
     font-size: $size-3;
   }
+  .btnColor-#{$key}:hover {
+    font-size: $size-4;
+  }
 }
